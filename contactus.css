@@ -218,6 +218,34 @@
         }
 
         /* Responsive adjustments */
+
+        @media(max-width: 480px){
+          
+            .nav-links a:not(.cta-button) {
+                display: none; 
+            }
+
+            .contact-form-container {
+                padding: 30px 20px;
+                width: 55%;
+            }
+
+            .footer-container p{
+                display: flex;
+                flex-direction: column;
+                gap: 1.1rem;
+                
+            }
+
+            .btn{
+                max-width: 170px;
+                font-weight: 100;
+                margin: 0 auto !important;
+                
+            }
+           
+        }
+
         @media (max-width: 768px) {
             .contact-hero-content h1 {
                 font-size: 2em;
