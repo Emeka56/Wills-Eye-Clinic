@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "name": "will's-eye-clinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emeka56/Wills-Eye-Clinic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emeka56/Wills-Eye-Clinic/issues"
+  },
+  "homepage": "https://github.com/Emeka56/Wills-Eye-Clinic#readme"
+}
