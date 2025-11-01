@@ -215,9 +215,9 @@
             padding-bottom: 1rem; 
             margin-bottom: 1rem;
             gap: 1.5rem;
-            /* scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;
             scrollbar-width: thin; 
-            scrollbar-color: var(--color-primary) var(--color-light); */
+            scrollbar-color: var(--color-primary) var(--color-light);
         }
         
         /* Webkit Scrollbar Styling (Chrome, Safari) */
@@ -225,7 +225,7 @@
             height: 8px;
         }
         .team-scroll-container::-webkit-scrollbar-thumb {
-            /* background-color: var(--color-primary); */
+            background-color: var(--color-primary);
             border-radius: 10px;
         }
         .team-scroll-container::-webkit-scrollbar-track {
