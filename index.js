@@ -19,7 +19,7 @@ app.get("/contactUs", (req, res) =>{
     console.log(`viewing the contact page`);
 })
 
-app.post("/contactUs", (req, res) =>{
+app.post("/contactus", (req, res) =>{
     const {fullName, email, tel, reason, date, message} = req.body;
     res.send(`Hello ${fullName}, Thank you for reaching out,
          We have received your message, and we will reach out to you via Mail within 1 business day.
