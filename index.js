@@ -14,8 +14,8 @@ app.get("/", (req, res)=>{
 });
 
 
-app.get("/contactUs", (req, res) =>{
-    res.sendFile(path.join(__dirname, "views/contactUs.html"));
+app.get("/contactus", (req, res) =>{
+    res.sendFile(path.join(__dirname, "views/contactus.html"));
     console.log(`viewing the contact page`);
 })
 
