@@ -28,6 +28,8 @@ app.post("/contactus", (req, res) =>{
 
 
 
-app.listen(port, ()=>{
-    console.log(`listening at ${port}`)
-})
+// app.listen(port, ()=>{
+//     console.log(`listening at ${port}`)
+// })
+
+module.exports = app;
