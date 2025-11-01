@@ -480,9 +480,7 @@
                flex-wrap: wrap;
             }
 
-             .book{
-                font-weight: lighter;
-            }
+             
         }
 
         @media (max-width: 412px) {
