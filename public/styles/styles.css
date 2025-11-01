@@ -210,13 +210,14 @@
 
         .team-scroll-container {
             display: flex;
+            justify-content: center;
             overflow-x: scroll;
-            padding-bottom: 1rem; /* Space for scrollbar */
+            padding-bottom: 1rem; 
             margin-bottom: 1rem;
             gap: 1.5rem;
-            scroll-snap-type: x mandatory;
-            scrollbar-width: thin; /* Firefox */
-            scrollbar-color: var(--color-primary) var(--color-light); /* Firefox */
+            /* scroll-snap-type: x mandatory;
+            scrollbar-width: thin; 
+            scrollbar-color: var(--color-primary) var(--color-light); */
         }
         
         /* Webkit Scrollbar Styling (Chrome, Safari) */
@@ -224,7 +225,7 @@
             height: 8px;
         }
         .team-scroll-container::-webkit-scrollbar-thumb {
-            background-color: var(--color-primary);
+            /* background-color: var(--color-primary); */
             border-radius: 10px;
         }
         .team-scroll-container::-webkit-scrollbar-track {
@@ -252,12 +253,12 @@
         }
 
         .team-member img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
             object-fit: cover;
             margin: 0 auto 1rem;
-            border: 3px solid var(--color-accent);
+            border: 2px solid var(--color-accent);
         }
 
         .team-member h4 {
@@ -348,7 +349,7 @@
         }
 
         .gallery-item:hover img {
-            transform: scale(1.05);
+            transform: scale(1.15);
             cursor: grab;
         }
 
