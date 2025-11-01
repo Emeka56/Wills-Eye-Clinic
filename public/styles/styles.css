@@ -216,21 +216,23 @@
             margin-bottom: 1rem;
             gap: 1.5rem;
             scroll-snap-type: x mandatory;
-            scrollbar-width: thin; 
-            scrollbar-color: var(--color-primary) var(--color-light);
+            /* scrollbar-width: thin; 
+            scrollbar-color: var(--color-primary) var(--color-light); */
         }
         
         /* Webkit Scrollbar Styling (Chrome, Safari) */
         .team-scroll-container::-webkit-scrollbar {
             height: 8px;
         }
+
         .team-scroll-container::-webkit-scrollbar-thumb {
-            background-color: var(--color-primary);
+            /* background-color: var(--color-primary); */
             border-radius: 10px;
         }
-        .team-scroll-container::-webkit-scrollbar-track {
+
+        /* .team-scroll-container::-webkit-scrollbar-track {
             background-color: var(--color-light);
-        }
+        } */
 
         .team-member {
             flex-shrink: 0; /* Important: Prevents items from shrinking */
@@ -253,8 +255,8 @@
         }
 
         .team-member img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 20%;
             object-fit: cover;
             margin: 0 auto 1rem;
@@ -414,7 +416,7 @@
 
             /* Navigation */
             .nav-links {
-                display: block; /* Show links on tablet/desktop */
+                display: block; 
             }
 
             /* Hero */
@@ -436,8 +438,19 @@
             .gallery-grid {
                 grid-template-columns: repeat(4, 1fr);
             }
+
+             .book{
+                font-weight: lighter;
+            }
         }
         
+        /* Medium Screens (<= 900px) */
+        @media (max-width: 900px) {
+            .team-scroll-container{
+                display: grid;
+                grid-template-columns: repeat(2, 300px);
+            }
+        }
         /* Mobile Specific Adjustments (<= 767px) */       
         
         @media (max-width: 767px) {
@@ -460,5 +473,25 @@
             
             .nav-links .cta-button {
                 margin-left: 0;
+            }
+
+            .team-scroll-container{
+                display: flex;
+               flex-wrap: wrap;
+            }
+
+             .cta-button{
+                font-weight: lighter;
+            }
+        }
+
+        @media (max-width: 412px) {
+          .book{
+                font-weight: lighter;
+                display: block;
+                max-width: 180px;
+               text-align: center;
+              align-items: center;
+              margin: .5rem auto !important;
             }
         }
