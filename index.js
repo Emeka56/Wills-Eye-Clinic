@@ -4,20 +4,29 @@ const app = express();
 const path = require("path");
 const port = process.env.port || 5000;
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(process.cwd(), "public")));
 app.use(express.urlencoded({extended: true}));
 
 
 app.get("/", (req, res)=>{
-    res.sendFile(path.join(__dirname, "views/index.html"));
+    res.sendFile(path.join(process.cwd(), "views/index.html"));
     console.log(`Viewing the index page`)
 });
+// app.get("/", (req, res)=>{
+//     res.sendFile(path.join(__dirname, "views/index.html"));
+//     console.log(`Viewing the index page`)
+// });
 
 
 app.get("/contactus", (req, res) =>{
-    res.sendFile(path.join(__dirname, "views/contactus.html"));
+    res.sendFile(path.join(process.cwd(), "views/contactus.html"));
     console.log(`viewing the contact page`);
-})
+});
+
+// app.get("/contactus", (req, res) =>{
+//     res.sendFile(path.join(__dirname, "views/contactus.html"));
+//     console.log(`viewing the contact page`);
+// })
 
 app.post("/contactus", (req, res) =>{
     const {fullName, email, tel, reason, date, message} = req.body;
