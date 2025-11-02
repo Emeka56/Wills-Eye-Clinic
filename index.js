@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const path = require("path");
-const port = 5000;
+const port = process.env.port || 5000;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended: true}));
@@ -28,8 +28,8 @@ app.post("/contactus", (req, res) =>{
 
 
 
-// app.listen(port, ()=>{
-//     console.log(`listening at ${port}`)
-// })
+app.listen(port, ()=>{
+    console.log(`listening at ${port}`)
+})
 
-module.exports = app; 
+// module.exports = app; 
