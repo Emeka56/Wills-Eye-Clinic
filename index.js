@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.get("/", (req, res)=>{
     res.sendFile(path.join(process.cwd(), "views/index.html"));
-    console.log(`Viewing the index page`)
+    console.log(`Viewing the index page`);
 });
 // app.get("/", (req, res)=>{
 //     res.sendFile(path.join(__dirname, "views/index.html"));
