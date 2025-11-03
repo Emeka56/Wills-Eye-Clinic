@@ -170,8 +170,8 @@
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
-            border-color: #00bcd4; /* Teal on focus */
-            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2); /* Soft teal glow */
+            border-color: #00bcd4; 
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
             outline: none;
         }
 
@@ -186,7 +186,7 @@
         }
 
         .submit-button {
-            background-color: #00bcd4; /* Teal submit button */
+            background-color: #00bcd4; 
             color: white;
             padding: 14px 28px;
             border: none;
@@ -241,7 +241,6 @@
                 max-width: 170px;
                 font-weight: 100;
                 margin: 0 auto !important;
-                
             }
            
         }
@@ -285,10 +284,10 @@
             margin-top: 1.5rem;
         }
 
-        .schedule{
+        /* .book{
             color: var(--color-accent);
             margin-left: 1rem;
-        }
+        } */
         
         .footer a {
             color: var(--color-accent);
