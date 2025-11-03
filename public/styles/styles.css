@@ -438,10 +438,6 @@
             .gallery-grid {
                 grid-template-columns: repeat(4, 1fr);
             }
-
-             .book{
-                font-weight: 400;
-            }
         }
         
         /* Medium Screens (<= 900px) */
@@ -481,7 +477,6 @@
             }
 
            .book{
-                font-weight: lighter;
                 display: block;
                 max-width: 180px;
                text-align: center;
