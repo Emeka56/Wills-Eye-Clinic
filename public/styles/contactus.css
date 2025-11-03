@@ -238,8 +238,7 @@
             }
 
             .btn{
-                max-width: 170px;
-                font-weight: 100;
+                width: fit-content;
                 margin: 0 auto !important;
             }
            

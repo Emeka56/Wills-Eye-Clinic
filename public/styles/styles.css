@@ -478,10 +478,15 @@
 
            .book{
                 display: block;
-                max-width: 180px;
+                width: fit-content;
                text-align: center;
               align-items: center;
               margin: .5rem auto !important;
+            }
+
+            .team-scroll-container{
+                display: grid;
+                grid-template-columns: repeat(2, 300px);
             }
              
         }
@@ -490,7 +495,7 @@
           .book{
                 font-weight: 400;
                 display: block;
-                max-width: 180px;
+                width: fit-content;
                text-align: center;
               align-items: center;
               margin: .5rem auto !important;
