@@ -329,10 +329,14 @@
       <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p class="ready">Ready for clear vision? <a href="/contactus" class="cta-button book" >Book Exam</a></p>
-            <p class="wills-desc">&copy; 2025 Will's Eye Clinic. All rights reserved.</p>
-            <p class="wills-address">📍New Haven, Enugu State |<a href="/contactus">Contact Us</a></p>
+            <p class="ready">Ready for clear vision? <a href="/contactus.html" class="cta-button book" >Book Exam</a></p>
+            <p class="wills-desc">&copy;<span id="year"></span> Will's Eye Clinic. All rights reserved.</p>
+            <p class="wills-address">📍New Haven, Enugu State |<a href="/contactus.html">Contact Us</a></p>
         </div>
     </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
