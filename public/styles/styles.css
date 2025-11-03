@@ -214,7 +214,7 @@
             overflow-x: scroll;
             padding-bottom: 1rem; 
             margin-bottom: 1rem;
-            gap: 1.5rem;
+            gap: 1.2rem;
             scroll-snap-type: x mandatory;
             /* scrollbar-width: thin; 
             scrollbar-color: var(--color-primary) var(--color-light); */
@@ -236,7 +236,7 @@
 
         .team-member {
             flex-shrink: 0; /* Important: Prevents items from shrinking */
-            width: 250px;
+            width: 240px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -482,13 +482,7 @@
                text-align: center;
               align-items: center;
               margin: .5rem auto !important;
-            }
-
-            .team-scroll-container{
-                display: grid;
-                grid-template-columns: repeat(2, 300px);
-            }
-             
+            }             
         }
 
         @media (max-width: 412px) {
