@@ -19,7 +19,8 @@ app.get("/", (req, res)=>{
 
 
 app.get("/contactus", (req, res) =>{
-    res.sendFile(path.join(process.cwd(), "views/contactus.html"));
+    // res.sendFile(path.join(process.cwd(), "views/contactus.html"));
+    res.send("hello")
     console.log(`viewing the contact page`);
 });
 
