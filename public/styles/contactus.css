@@ -16,6 +16,7 @@
             background-color: var(--color-light);
             line-height: 1.2;
             scroll-behavior: smooth;
+            display: none;
         }
 
         main{
