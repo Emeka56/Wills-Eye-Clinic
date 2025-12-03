@@ -209,13 +209,15 @@
         }
 
         .team-scroll-container {
-            display: flex;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(2, minmax(100px,300px));
             justify-content: center;
-            overflow-x: scroll;
+            /* overflow-x: scroll; */
             padding-bottom: 1rem; 
             margin-bottom: 1rem;
-            gap: 1.2rem;
-            scroll-snap-type: x mandatory;
+            gap: 1.5rem;
+            /* scroll-snap-type: x mandatory; */
             /* scrollbar-width: thin; 
             scrollbar-color: var(--color-primary) var(--color-light); */
         }
