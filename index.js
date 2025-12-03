@@ -10,7 +10,6 @@ app.use(express.urlencoded({extended: true}));
 
 app.get("/", (req, res)=>{
     res.sendFile(path.join(process.cwd(), "views/index.html"));
-    console.log(`Viewing the index page`);
 });
 // app.get("/", (req, res)=>{
 //     res.sendFile(path.join(__dirname, "views/index.html"));
@@ -21,7 +20,6 @@ app.get("/", (req, res)=>{
 app.get("/contactus", (req, res) =>{
     // res.sendFile(path.join(process.cwd(), "views/contactus.html"));
     res.sendFile(path.join(__dirname, "views/contactUs.html"))
-    console.log(`viewing the contact page`);
 });
 
 // app.get("/contactus", (req, res) =>{
@@ -39,7 +37,6 @@ app.post("/contactus", (req, res) =>{
 
 
 app.listen(port, ()=>{
-    console.log(`listening at ${port}`)
 });
 
 // module.exports = app; 
